@@ -132,7 +132,7 @@ class DialogueBox extends FlxSpriteGroup
 		
 		if (PlayState.SONG.song.toLowerCase() == 'senpai' || PlayState.SONG.song.toLowerCase() == 'roses' || PlayState.SONG.song.toLowerCase() == 'thorns')
 		{
-		portraitRight = new FlxSprite(0, 40);
+		portraitRight = new FlxSprite(-0, 40);
 		portraitRight.frames = Paths.getSparrowAtlas('weeb/bfPortrait');
 		portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
 		portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
@@ -143,7 +143,7 @@ class DialogueBox extends FlxSpriteGroup
 		}
 		else if (PlayState.SONG.song.toLowerCase() == 'b')
 		{
-		portraitRight = new FlxSprite(-50, 40);
+		portraitRight = new FlxSprite(10, 10);
 		portraitRight.frames = Paths.getSparrowAtlas('portraits/bfPortrait', 'shared');
 		portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter instance 1', 24, false);
 		portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.15));
