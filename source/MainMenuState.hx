@@ -89,8 +89,10 @@ class MainMenuState extends MusicBeatState
 
 		var tex = Paths.getSparrowAtlas('FNF_main_menu_assets');
 
-		for (i in 0...optionShit.length)
-		{
+		var tex1 = Paths.getSparrowAtlas('b',"CrusaderWeek");
+	
+         for (i in 0...optionShit.length)
+		 {
 			var menuItem:FlxSprite = new FlxSprite(0, FlxG.height * 1.6);
 			menuItem.frames = tex;
 			menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
