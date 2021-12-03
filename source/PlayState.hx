@@ -1085,7 +1085,7 @@ class PlayState extends MusicBeatState
 		
 		trace('starting');
 
-		if (isStoryMode)
+		//if (isStoryMode)
 		{
 			switch (StringTools.replace(curSong," ", "-").toLowerCase())
 			{
@@ -1126,14 +1126,6 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'b':
 					schoolIntro(doof);
-				default:
-					startCountdown();
-			}
-		}
-		else
-		{
-			switch (curSong.toLowerCase())
-			{
 				default:
 					startCountdown();
 			}
